@@ -1,0 +1,60 @@
+# --- ESP-IDF build outputs ---
+/build/
+**/build/
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+install_manifest.txt
+compile_commands.json
+*.cmake
+
+# --- ESP-IDF configs ---
+# เก็บ sdkconfig.defaults ได้ แต่ไม่เก็บ sdkconfig ที่เป็นของเครื่องผู้พัฒนา
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+
+# --- ESP-IDF Component Manager ---
+# ติดตั้งอัตโนมัติ ไม่จำเป็นต้องคอมมิต
+/managed_components/
+.depends/
+
+# --- Firmware artifacts (เผื่อมีไฟล์ถูกคัดลอกออกมานอก build) ---
+*.bin
+*.elf
+*.map
+*.hex
+*.log
+
+# --- IDE/Editor junk ---
+.vscode/
+.idea/
+*.code-workspace
+.cproject
+.project
+.settings/
+*.swp
+*.swo
+
+# --- clangd / ccls ---
+.cache/
+.ccls-cache/
+.clangd/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Python / Virtual env / Node (ถ้าใช้สคริปต์เสริม) ---
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# --- Misc ---
+*.tmp
+*.bak
+*.orig
